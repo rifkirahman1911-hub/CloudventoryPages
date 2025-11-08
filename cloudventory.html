@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cloudventory</title>
+
+  <!-- Font Modern -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="cloudventory.css" />
+</head>
+
+<body>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="header-top">
+      <div class="logo">
+        <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="30" height="30">
+          <path d="M19 18H6a4 4 0 010-8 5.5 5.5 0 0110.9-1.1A3.5 3.5 0 0119 18z"/>
+        </svg>
+        <span>Cloudventory</span>
+      </div>
+
+      <nav>
+        <a href="#fitur">Fitur</a>
+        <a href="#manfaat">Manfaat</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+
+      <div class="header-buttons">
+        <a href="#daftar" class="btn daftar">Daftar</a>
+        <a href="#login" class="btn login">Login</a>
+        <button id="themeToggle" class="theme-btn">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero-carousel">
+    <div class="carousel">
+      <img src="hero1.jpg" class="active" alt="Hero 1">
+      <img src="hero2.jpg" alt="Hero 2">
+      <img src="hero3.jpg" alt="Hero 3">
+    </div>
+
+    <div class="hero-overlay">
+      <h1>Kelola Bisnis UMKM Anda dengan Mudah</h1>
+      <p>Cloudventory membantu pencatatan keuangan & stok secara efisien, aman, dan terintegrasi.</p>
+
+      <div class="hero-ctas">
+        <a href="#daftar" class="cta-btn">Daftar Sekarang</a>
+        <a href="#fitur" class="btn ghost">Lihat Fitur</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FITUR ===== -->
+  <section id="fitur" class="section">
+    <h2>Fitur Unggulan</h2>
+
+    <div class="fitur-container">
+      <div class="fitur-card">
+        <div class="icon">📦</div>
+        <h3>Pencatatan Stok Otomatis</h3>
+        <p>Catat dan kelola stok barang dengan mudah dan cepat.</p>
+      </div>
+
+      <div class="fitur-card">
+        <div class="icon">📊</div>
+        <h3>Laporan Keuangan</h3>
+        <p>Dapatkan laporan real-time dan ekspor PDF atau CSV.</p>
+      </div>
+
+      <div class="fitur-card">
+        <div class="icon">☁️</div>
+        <h3>Akses Cloud</h3>
+        <p>Akses data di mana saja dan kapan saja secara aman.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MANFAAT ===== -->
+  <section id="manfaat" class="section">
+    <h2>Manfaat Penggunaan</h2>
+
+    <div class="manfaat-container">
+      <div class="manfaat-card">
+        <h3>Efisiensi Waktu</h3>
+        <p>Semua data tercatat otomatis sehingga menghemat waktu.</p>
+      </div>
+
+      <div class="manfaat-card">
+        <h3>Keamanan Data</h3>
+        <p>Data aman tersimpan di cloud dengan enkripsi modern.</p>
+      </div>
+
+      <div class="manfaat-card">
+        <h3>Skalabilitas</h3>
+        <p>Sistem mudah dikembangkan seiring kebutuhan bisnis Anda.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="kontak">
+    <div class="footer-inner">
+      <p>Hubungi kami:</p>
+      <a class="hubungi-btn" href="https://wa.me/6281316960245" target="_blank">Hubungi via WhatsApp</a>
+      <p>Telepon: <a href="tel:+6281316960245">+62 813-1696-0245</a></p>
+    </div>
+
+    <p class="copyright">
+      © <span id="year"></span> Cloudventory
+    </p>
+  </footer>
+
+  <!-- JS -->
+  <script src="cloudventory.js"></script>
+</body>
+</html>
