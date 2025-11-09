@@ -5,6 +5,14 @@ themeToggle.addEventListener("click", () => {
   themeToggle.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
 });
 
+// ===== MOBILE MENU TOGGLE =====
+const menuToggle = document.getElementById("menuToggle");
+const navMenu = document.getElementById("mainNav");
+
+menuToggle.addEventListener("click", () => {
+  navMenu.classList.toggle("show");
+});
+
 // ===== CAROUSEL =====
 window.addEventListener("load", () => {
   const slides = document.querySelectorAll(".carousel img");
@@ -19,3 +27,4 @@ window.addEventListener("load", () => {
 
 // ===== TAHUN OTOMATIS =====
 document.getElementById("year").textContent = new Date().getFullYear();
+
