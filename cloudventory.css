@@ -303,3 +303,53 @@ footer {
     gap: 20px;
   }
 }
+
+/* ===== HAMBURGER MENU (MOBILE) ===== */
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Tampilkan tombol & ubah layout saat mobile */
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    background: #44D5CC;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+
+  nav a {
+    display: block;
+    padding: 10px 0;
+    font-size: 1.1rem;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  /* Sembunyikan tombol daftar/login di baris bawah biar rapi */
+  .header-buttons {
+    margin-top: 10px;
+  }
+}
+
+
